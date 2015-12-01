@@ -327,9 +327,9 @@ a:active {
 
 .button {
     color: white;
-    background: #10bbf1;
+    background: #F9680E;
     height: 58px;
-    border: 2px solid #10bbf1;
+    border: 2px solid #F9680E;
     font: 500 22px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0 21px;
     -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
@@ -346,13 +346,13 @@ a:active {
 }
 
 .button:hover {
-    background: #40c9f4;
-    border-color: #40c9f4;
+    background: #FFA36B;
+    border-color: #FFA36B;
 }
 
 .button:active {
-    background: #0b97c3;
-    border-color: #0b97c3;
+    background: #FFA36B;
+    border-color: #FFA36B;
 }
 
 a.button {
@@ -410,8 +410,8 @@ input:focus::-webkit-input-placeholder {
 /* header --------------------------  */
 
 header {
-    padding: 104px 0;
-    background: url(../images/header.jpg) no-repeat 50% 50%;
+    padding: 104px 0 0 0;
+    background: url(../images/header3.jpg) no-repeat 50% 50%;
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
@@ -428,6 +428,7 @@ header h1 {
     line-height: 60px;
     font-weight: 500;
     margin-bottom: 38px;
+	
 }
 
 header h1 span {
@@ -467,10 +468,12 @@ header .buttons-wrapper .button-stripe {
 }
 
 .header-img {
-    float: right
+    float: right;
+	width:22%;
 }
 
 .header-wrapper {
+	padding-left:20px;
     padding-top: 87px;
     max-width: 655px;
 }
@@ -494,7 +497,7 @@ footer {
 /* content --------------------------  */
 
 .spanning {
-    clear: both
+    clear: both;
 }
 
 .newsletter {
@@ -549,23 +552,27 @@ footer {
 }
 
 .promo-column {
+	margin:0 auto;
     padding: 0 15px 60px;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 25%;
+    width: 33%;
 }
 
 .promo-column img {
     display: block;
     margin-bottom: 23px;
+	margin-left: auto;
+      margin-right: auto;
 }
 
 .promo-column h5 {
     font: bold 18px/24px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-bottom: 12px;
+	color:#666;
 }
 
 .simple {
@@ -721,6 +728,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 25px;
+	color:#666;
 }
 
 .video-subtitle {
@@ -1066,3 +1074,73 @@ footer {
       background-size: 200px 50px;
   }
 }
+
+
+/*ブランドカラーの青*/
+.primary-1 { color: #28C1FC }
+.primary-2 { color: #07BAFF }
+.primary-0 { color: #00A9EA }
+.primary-3 { color: #0076A2 }
+.primary-4 { color: #005C7F }
+
+/*薄い青*/
+.secondary-3-1 { color: #F6FEFC }
+.secondary-3-2 { color: #D1F3EB }
+.secondary-3-0 { color: #A2DED1 }
+.secondary-3-3 { color: #72C0AF }
+.secondary-3-4 { color: #479E8A }
+
+/*薄い紫*/
+.secondary-4-1 { color: #FEFEFE }
+.secondary-4-2 { color: #F3EAF4 }
+.secondary-4-0 { color: #DCC6E0 }
+.secondary-4-3 { color: #BC96C2 }
+.secondary-4-4 { color: #9764A0 }
+
+/*補色 コンバージョンカラー*/
+.complement-1 { color: #FFA36B }
+.complement-2 { color: #FF8A42 }
+.complement-0 { color: #F9680E }
+.complement-3 { color: #C54C01 }
+.complement-4 { color: #9B3C00 }
+
+.default-1 { color: #C4C3C3 }
+.default-2 { color: #949494 }
+.default-0 { color: #666666 }
+.default-3 { color: #2D2D2D }
+.default-4 { color: #040303 }
+
+/*ブランドカラーの青*/
+.bg-primary-1 { background-color: #28C1FC }
+.bg-primary-2 { background-color: #07BAFF }
+.bg-primary-0 { background-color: #00A9EA }
+.bg-primary-3 { background-color: #0076A2 }
+.bg-primary-4 { background-color: #005C7F }
+
+/*薄い青*/
+.bg-secondary-3-1 { background-color: #F6FEFC }
+.bg-secondary-3-2 { background-color: #D1F3EB }
+.bg-secondary-3-0 { background-color: #A2DED1 }
+.bg-secondary-3-3 { background-color: #72C0AF }
+.bg-secondary-3-4 { background-color: #479E8A }
+
+/*薄い紫*/
+.bg-secondary-4-1 { background-color: #FEFEFE }
+.bg-secondary-4-2 { background-color: #F3EAF4 }
+.bg-secondary-4-0 { background-color: #DCC6E0 }
+.bg-secondary-4-3 { background-color: #BC96C2 }
+.bg-secondary-4-4 { background-color: #9764A0 }
+
+/*補色 コンバージョンカラー*/
+.bg-complement-1 { background-color: #FFA36B }
+.bg-complement-2 { background-color: #FF8A42 }
+.bg-complement-0 { background-color: #F9680E }
+.bg-complement-3 { background-color: #C54C01 }
+.bg-complement-4 { background-color: #9B3C00 }
+
+.bg-white { background-color:#fff;}
+.bg-default-1 { background-color: #C4C3C3 }
+.bg-default-2 { background-color: #949494 }
+.bg-default-0 { background-color: #666666 }
+.bg-default-3 { background-color: #2D2D2D }
+.bg-default-4 { background-color: #040303 }
