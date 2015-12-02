@@ -412,7 +412,7 @@ input:focus::-webkit-input-placeholder {
 header {
     padding: 104px 0 0 0;
     background: url(../images/header3.jpg) no-repeat 50% 50%;
-    font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 22px/34px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -424,7 +424,7 @@ header {
 }
 
 header h1 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 60px;
     font-weight: 500;
     margin-bottom: 38px;
@@ -473,9 +473,9 @@ header .buttons-wrapper .button-stripe {
 }
 
 .header-wrapper {
-	padding-left:20px;
+	padding-left:50px;
     padding-top: 87px;
-    max-width: 655px;
+    max-width: 800px;
 }
 
 /* footer --------------------------  */
