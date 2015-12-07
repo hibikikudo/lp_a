@@ -67,22 +67,22 @@ Typo
 ============= */
 
 h1 {
-	font-size: 38px;
+	font-size: 3.8rem;
 }
 h2 {
-	font-size: 36px;
+	font-size: 3.6rem;
 }
 h3 {
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 h4 {
-	font-size: 28px;
+	font-size: 2.8rem;
 }
 h5 {
-	font-size: 24px;
+	font-size: 2.4rem;
 }
 h6 {
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 h1,
@@ -737,7 +737,8 @@ a:focus {
 
 /* service */
 
-.service-icon span, .service-icon i {
+.service-icon span, .service-icon i,
+.service-icon2 span, .service-icon2 i  {
 	color: #07BAFF;
 }
 
@@ -1053,13 +1054,16 @@ Elements
 }
 
 .service-icon {
+	margin: 0 20px 70px 0;
+	float: left;
+}	
+.service-icon i ,.service-icon2 i{
+	font-size:4rem;
+	}
+.service-icon2 {
 	margin: 0 20px 20px 0;
 	float: left;
 }	
-.service-icon i{
-	font-size:4rem;
-	}
-
 .service-desc h5 {
 	margin-bottom: 10px;
 }
@@ -1879,6 +1883,10 @@ a.btn:focus{
 	.box i {
 		margin-bottom: 30px;
 	}
+	.service-icon {
+	margin: 0 20px 100px 0;
+	float: left;
+	}
 		
 }
 
@@ -1892,6 +1900,7 @@ a.btn:focus{
 	.intro-content {
 		padding:250px 0 0;
 	}
+	
 }
 
 @font-face {
