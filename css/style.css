@@ -694,10 +694,12 @@ hr.bold {
 	background: #fff;
 }
 
-.bg-gray {
+.bg-light-gray {
 	background: #fafafa;
 }
-
+.bg-gray {
+	background: #e7e7e7;
+}
 
 .bg-dark {
 	background: #404040;
@@ -1988,7 +1990,7 @@ font-style: normal;
 .hover14 figure::before {
 	position: absolute;
 	top: 0;
-	left: -75%;
+	left: -300%;
 	z-index: 2;
 	display: block;
 	content: '';
