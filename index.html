@@ -57,6 +57,9 @@
     <div class="intro-content">
       <div class="container">
         <div class="row">
+        <div class="col-md-6">
+            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s"> <img src="img/main-img3.png" class="img-responsive" alt="" /> </div>
+          </div>
           <div class="col-md-6">
             <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
               <h2 class="h-ultra">トライブの転職</h2>
@@ -78,9 +81,7 @@
             </div>
             <p class="text-right wow bounceIn paddingbot-0" data-wow-delay="0.4s"> <a href="#" class="btn btn-cta btn-cta-badge btn-shadow"> 登録してお仕事を探す <i class="fa fa-chevron-circle-right"></i></a> </p>
           </div>
-          <div class="col-md-6">
-            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s"> <img src="img/main-img.png" class="img-responsive" alt="" /> </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -601,7 +602,7 @@
       </div>
     </div>
   </section>
-  <section id="chart" class="home-section bg-light-gray">
+  <section id="data" class="home-section bg-light-gray">
     <div class="container marginbot-50">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
@@ -615,7 +616,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="data2">
       <div class="row">
         <div class=" col-sm-6 col-md-4 text-center">
           <div class="wow fadeInUp" data-wow-delay="0.1s">
@@ -638,7 +639,7 @@
           </div>
         </div>
         <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
-        <div class=" col-sm-6 col-md-4 text-center">
+        <div class=" col-sm-6 col-md-4 text-center" id="data3">
           <div class="wow fadeInUp" data-wow-delay="0.3s">
             <div class="chart">
               <canvas id="myChart3" width="240" height="240"></canvas>
@@ -813,6 +814,7 @@ var data = [
 	{
 		value: 79,
 		color:"#66ccff"
+		
 	},
 	{
 		value : 21,
@@ -836,15 +838,27 @@ new Chart(ctx).Doughnut(data,{
 // ===================================
 // Chart2
 // ===================================
+
+
 var data = [
-	{
-		value: 62,
-		color:"#66ccff"
-	},
-	{
-		value : 100-62,
-		color : "#eee"
-	}
+    {
+        value: 300,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+    },
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
+    {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+    }
 ];
 var ctx = document.getElementById("myChart2").getContext("2d");
 new Chart(ctx).Doughnut(data,{
@@ -860,8 +874,9 @@ new Chart(ctx).Doughnut(data,{
 	onAnimationComplete : null
 });
 // ===================================
-// Chart2
+// Chart3
 // ===================================
+
 var data = [
 	{
 		value: 62,
