@@ -597,7 +597,7 @@ hr.bold {
 .paddingtop-80{padding-top:80px !important;}
 .paddingtop-90{padding-top:90px !important;}
 .paddingtop-100{padding-top:100px !important;}
-
+.paddingtop-150{padding-top:150px !important;}
 .paddingbot-0{padding-bottom:0 !important;}
 .paddingbot-10{padding-bottom:10px !important;}
 .paddingbot-20{padding-bottom:20px !important;}
@@ -1066,7 +1066,6 @@ Elements
 	display: inline-block;
 	color: #fff;
 	width: 1.6em;
-    height: 1.6em;
 	text-align: center;
 	line-height: 1.6em;
 }
@@ -2165,4 +2164,85 @@ figure.snip1204 .author span {
     top: 77px;
     left: 40px;
     color: #666;
+}
+
+.panel {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.panel i {
+  position: relative;
+  display: block;
+  padding: 12px 25px 25px 25px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+  font-style:oblique;
+}
+.panel i span {
+  display: block;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 120px;
+}
+.panel:after {
+  position: absolute;
+  font-family: FontAwesome;
+  color: #000000;
+  z-index: 1;
+  transition: all .5s;
+  line-height: normal;
+}
+.panel.project {
+  
+  background-color: #00A9EA;
+}
+.panel.project:after {
+  content: "\f0f2";
+  font-size: 200px;
+  color: #0098d2;
+  top: 62px;
+  right: 39px;
+}
+.panel.project:hover:after {
+  top: 8px;
+}
+
+.panel.page {
+  background-color: #36D7B7;
+}
+.panel.page:after {
+  content: "\f15c";
+  font-size: 160px;
+  color: #30c1a4;
+  top: 62px;
+  right: 39px;
+}
+.panel.page:hover:after {
+  top: 24px;
+}
+.panel.user {
+	background-color: #5C97BF;
+}
+.panel.user:after {
+  content: "\f007";
+  font-size: 200px;
+  color: #5287ab;
+  top: 45px;
+  right: 35px;
+}
+.panel.user:hover:after {
+  top: 7px;
+}
+.panel:hover:after {
+  transition: all .5s;
 }
