@@ -4,7 +4,7 @@
  Author: BootstrapTaste
  Author URI: http://bootstraptaste.com
  */
- 
+
 
 body {
     width: 100%;
@@ -202,8 +202,20 @@ blockquote strong {
   font-weight: 700;
 }
 
-
-
+strong{
+font-size:130%;
+font-weight:normal;
+font-weight: 600;
+background: linear-gradient(transparent 70%, #66ccff 70%);
+color:#555;
+}
+.green-underline{
+background: linear-gradient(transparent 70%, #66FFCC 70%);
+}
+.well-headline{
+	font-size:2rem;
+	font-weight:bold;
+	}
 
 .light {
     font-weight: 400;
@@ -2179,6 +2191,7 @@ figure.snip1204 .author span {
   overflow: hidden;
   border-radius: 8px;
 }
+
 .panel i {
   position: relative;
   display: block;
