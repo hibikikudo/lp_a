@@ -1,11 +1,3 @@
-/*
- Medicio Bootstrap theme by BootstrapTaste.com
- Theme URI: http://bootstraptaste.com/medicio-free-bootstrap-theme/
- Author: BootstrapTaste
- Author URI: http://bootstraptaste.com
- */
-
-
 body {
     width: 100%;
     height: 100%;
@@ -15,7 +7,7 @@ body {
     background-color: #ddd;
 	font-size: 16px;
     line-height: 1.6em;
-	background: url(../img/dummy/bg01.gif) repeat left top;
+	background: url(../img/dummy/bg02.gif) repeat left top;
 }
 
 html {
@@ -220,6 +212,17 @@ background: linear-gradient(transparent 70%, #66FFCC 70%);
 .light {
     font-weight: 400;
 }
+
+.is-hankaku{
+	letter-spacing:-2rem;
+	}
+.is-hankaku2{
+	letter-spacing:-1rem;
+	}
+.is-bold{
+	font-style:normal;
+	font-weight:bold;
+	}
 
 /* Credit to bootsnipp.com for the css for the color graph */
 .colorgraph {
@@ -867,8 +870,13 @@ a:focus {
 }
 
 .intro-content {
-	background: url(../img/dummy/bg01.gif) no-repeat top center;
+	background: url(../img/dummy/bg02.gif) no-repeat top center;
 	padding:200px 0 0 0;
+	/*padding:200px 0 60px;*/
+}
+.outro-content {
+	background: url(../img/dummy/bg02.gif) no-repeat top center;
+	padding:150px 0 0 0;
 	/*padding:200px 0 60px;*/
 }
 .intro-content.intro-nobg {
@@ -889,7 +897,7 @@ a:focus {
 	border-radius: 4px;
 }
 
-.intro-content h2 {
+.intro-content h2, .outro-content h2 {
 	margin-bottom: 1rem;
 	font-size:5rem;
 }
@@ -1016,7 +1024,7 @@ form.lead label,form.lead input {
 }
 
 .cta-text h3 {
-	font-weight:900;
+	font-weight:bold;
 	line-height:1.1em;
 	margin-bottom: 1.4rem;
 	margin-top:1rem;
@@ -1157,7 +1165,7 @@ Testimonial
 }
 
 .carousel-control.left,.carousel-control.right  {background:none;width:25px; z-index: 999;}
-.carousel-control.left {top:left:-25px;}
+.carousel-control.left {left:-25px;}
 .carousel-control.right {right:-25px;}
 
 .block-text {
@@ -1341,7 +1349,7 @@ footer {
 }
 
 footer {
-	padding: 40px 0 0;
+	padding: 40px 0;
 }
 footer a {
 	color:#fff;
@@ -1349,9 +1357,6 @@ footer a {
 }
 	
 
-footer .widget {
-	margin-bottom: 30px;
-}
 
 footer .widget h5 {
 	font-size: 20px;
@@ -1588,102 +1593,6 @@ a.scrollup i:hover {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {    
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-
-
-/* blink btn */
-.blink {
-  -webkit-animation-name: blink;
-     -moz-animation-name: blink;
-       -o-animation-name: blink;
-          animation-name: blink;
-  -webktit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-        -o-animation-timing-function: linear;
-           animation-timing-function: linear;
-  -webkit-animation-duration: 2s;
-     -moz-animation-duration: 2s;
-       -o-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.blink-infinite {
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.blink-5 {
-  -webkit-animation-iteration-count: 5;
-     -moz-animation-iteration-count: 5;
-       -o-animation-iteration-count: 5;
-          animation-iteration-count: 5;
-}
-
-.blink-furiously {
-  -webkit-animation-duration: 0.3s;
-     -moz-animation-duration: 0.3s;
-       -o-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-@-o-keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-
-
 /* --- button --- */
 .btn {
 	position: relative;
@@ -1812,12 +1721,7 @@ a.btn:focus{
 /* Media queries */
 
 @media (min-width: 768px) and (max-width: 979px) {
-	.navbar-brand {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 100%;
-	}
+	
 	.intro-content {
 		padding:250px 0 0;
 	}
@@ -1827,7 +1731,13 @@ a.btn:focus{
 }
 
 @media (max-width:767px) {
-
+	.navbar-brand {
+		float: none;
+		display: block;
+		margin: 5px auto 0 10px;
+		width: 100%;
+		padding:0;
+	}
 	.top-area p {
 		text-align: center;
 	}
@@ -2142,41 +2052,6 @@ figure.snip1204 .author span {
   line-height:1.2;
 }
 
-.chart {
-    position: relative;
-    float: left; 
-	padding-left:60px;
-	padding-bottom:40px;
-}
-.chart .count {
-    position: absolute;
-    border-radius: 50%;
-    top: 44px;
-    left: 104px;
-    height: 152px;
-    width: 152px;
-}
-
-.chart em, 
-.chart span {
-    font-family: Arial;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-}
-.chart em {
-    display: block;
-    font-size: 50px;
-    font-style: normal;
-    color: #666;
-    line-height: 70px;
-}
-.chart .caption {
-    position: absolute;
-    top: 77px;
-    left: 40px;
-    color: #666;
-}
 
 .panel {
   box-sizing: border-box;
