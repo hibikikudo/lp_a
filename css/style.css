@@ -843,15 +843,6 @@ a:focus {
 	color: #07BAFF;
 }
 
-/* pricing box  */
-.pricing-content.featured h2,.pricing-content.featured .price-bottom {
-	background-color:#00A9EA;
-}
-.pricing-content.featured h3 {
-	background:#07BAFF;
-}
-
-
 
 /* team */
 
@@ -1447,131 +1438,6 @@ a.scrollup i:hover {
 --- Elements
 ============================ */
 
-/* --- tooltip --- */
-.tooltip {
-  font-size: 16px;
-  line-height: 1.6em;
-}
-
-
-/* --- Pricing box --- */
-.pricing-box {
-	padding-left:0;
-	padding-right:0;
-	
-}
-
-.pricing-content {
-	background:#fff;
-	-webkit-box-shadow:0 0 7px rgba(0,0,0,0.1);
-	box-shadow:0 0 7px rgba(0,0,0,0.1);
-	margin-top:20px;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out;
-	-o-transition:all .25s ease-in-out;
-	transition:all .25s ease-in-out;
-	position:relative;
-	
-	border-radius: 4px;
-}
-.pricing-content.general {
-	z-index:99;
-}
-
-.pricing-content:hover {
-	margin-top:-10px;
-	-webkit-transition:all .25s ease-in-out;
-	-moz-transition:all .25s ease-in-out;
-	-o-transition:all .25s ease-in-out;
-	transition:all .25s ease-in-out;
-	-webkit-box-shadow:0 2px 20px 0 rgba(0,0,0,0.2);
-	box-shadow:0 2px 20px 0 rgba(0,0,0,0.2);
-}
-
-.pricing-content h2 {
-	background-color:#666;
-	color:#FFF;
-	font-size:17px;
-	text-align:center;
-	margin-bottom:0;
-	padding:30px 0;
-	border-radius: 4px 4px 0 0;
-}
-
-.pricing-content h3 {
-	color:#fff;
-	text-align:center;
-	font-size:32px;
-	background:#444;
-	margin-bottom:0;
-	font-weight:700;
-	padding:30px 0;
-}
-
-.pricing-content h3 span {
-	font-weight:300;
-	font-size:18px;
-}
-
-.pricing-content h3 sup {
-	font-size:18px;
-}
-
-.pricing-content ul {
-	list-style:none;
-	margin:25px 0;
-}
-
-.pricing-content li {
-	border-top:1px dotted #EFEFEF;
-	width:75%;
-	color:#333;
-	margin:0 auto;
-	padding:15px 0;
-}
-
-.pricing-content li:first-child {
-	border-top:none;
-}
-
-.pricing-content li i {
-	float:right;
-
-}
-
-
-
-.pricing-content li del {
-	color:#aaa;
-}
-
-.price-bottom {
-	background:#f7f7f7;
-	text-align:center;
-	padding:25px 0;
-	border-radius: 0 0 4px 4px;
-}
-
-
-.pricing-content p {
-	background:#F8F8F8;
-	padding:20px;
-}
-
-.pricing-content.featured {
-	margin-top:-20px;
-	position:relative;
-	z-index:9999;
-	-webkit-box-shadow:0 2px 20px 0 rgba(0,0,0,0.2);
-	box-shadow:0 2px 20px 0 rgba(0,0,0,0.2);
-}
-
-
-.pricing-content.featured h3 {
-	font-size:38px;
-	padding:45px 0;
-}
-
 
 
 /* --- scroll --- */
@@ -1656,43 +1522,6 @@ a.btn:focus{
 	text-align: center;
 }
 
-
-.bgr .bg {
-	width:28px;
-	height:28px;
-	border:1px solid #e6e6e6;
-}
-
-.bgr .bg.bg1 {
-	background: url(../img/bodybg/bg1.png) repeat left top;
-}	
-.bgr .bg.bg2 {
-	background: url(../img/bodybg/bg2.png) repeat left top;
-}	
-.bgr .bg.bg3 {
-	background: url(../img/bodybg/bg3.jpg) repeat left top;
-}	
-.bgr .bg.bg4 {
-	background: url(../img/bodybg/bg4.png) repeat left top;
-}	
-.bgr .bg.bg5 {
-	background: url(../img/bodybg/bg5.png) repeat left top;
-}	
-.bgr .bg.bg6 {
-	background: url(../img/bodybg/bg6.png) repeat left top;
-}	
-.bgr .bg.bg7 {
-	background: url(../img/bodybg/bg7.png) repeat left top;
-}	
-.bgr .bg.bg8 {
-	background: url(../img/bodybg/bg8.jpg) repeat left top;
-}	
-.bgr .bg.bg9 {
-	background: url(../img/bodybg/bg9.png) repeat left top;
-}	
-.bgr .bg.bg10 {
-	background: url(../img/bodybg/bg10.png) repeat left top;
-}	
 
 #accent_color{
 	color: #fff;
