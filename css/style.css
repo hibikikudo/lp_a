@@ -7,7 +7,6 @@ body {
     background-color: #ddd;
 	font-size: 16px;
     line-height: 1.6em;
-	background: url(../img/dummy/bg02.gif) repeat left top;
 }
 
 html {
@@ -224,18 +223,7 @@ background: linear-gradient(transparent 70%, #66FFCC 70%);
 	font-weight:bold;
 	}
 
-/* Credit to bootsnipp.com for the css for the color graph */
-.colorgraph {
-  height: 5px;
-  border-top: 0;
-  background: #c4e17f;
-  margin:0;
-  padding-bottom:0;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-}
+
 
 /* =======
 Top area
@@ -717,6 +705,9 @@ hr.bold {
 .bg-dark {
 	background: #404040;
 }
+.bg-colorful{
+	background: url(../img/dummy/bg02.gif) repeat bottom left;
+	}
 
 /* --- section color var --- */
 
@@ -888,7 +879,8 @@ a:focus {
 }
 
 .intro-content h2, .outro-content h2 {
-	margin-bottom: 1rem;
+	
+	margin-bottom: 20px;
 	font-size:5rem;
 }
 
@@ -1779,7 +1771,11 @@ ul.lead-list li span.list {
 		font-size:4rem;
 		padding:0 15px;
 		}
-	.intro-content .container h4{
+	.intro-content h4,
+	.outro-content h4,
+	.intro-content h5,
+	.outro-content h5
+	{
 		padding:0 15px;
 		}
 	.top-area p {
