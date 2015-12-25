@@ -40,7 +40,14 @@
     </div>
     <div class="container navigation">
       <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars fa-2x"></i> </button>
+        <button type="button" id="ChangeToggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <div id="navbar-hamburger">
+        <i class="fa fa-2x fa-bars fa-fw"></i>
+          </div>
+        <div id="navbar-close" class="hidden">
+        <i class="fa fa-2x fa-times fa-fw"></i>
+        </div>
+        </button>
         <a class="navbar-brand" href="#intro"> <img src="img_landing01/logo.png" alt="株式会社トライブ ロゴ" width="150" height="40" /> </a> </div>
       
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -821,6 +828,14 @@ $(document).on('touchend mouseup','a',linkTouchEnd);
 
 			ga('create', 'UA-22065568-1', 'auto');
 			ga('send', 'pageview');
+</script>
+<script>
+$(function() {
+  $('#ChangeToggle').click(function() {
+    $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden');  
+  });
+});
 </script>
 </body>
 </html>
