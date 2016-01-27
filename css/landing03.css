@@ -243,6 +243,9 @@ strong {
 .is-border-light{
 	border:#FFF 1px solid;
 	}
+.is-border-dark{
+	border:#eee 1px solid;
+	}
 .top-area {
     width: auto;
     color: #fff;
@@ -837,7 +840,7 @@ a:hover {
     text-align: center;
     display: block;
     background: #fff;
-    border: #e05d0c 1px dashed;
+    border: #e05d0c 1px solid;
     color: #f9680e;
     position: absolute;
     border-radius: 50%;
@@ -1170,8 +1173,8 @@ form.lead label {
 }
 .person-text img.person {
     margin: 0 auto;
-    width: 200px;
-    height: 200px
+    width: 180px;
+    height: 180px
 }
 .company-social {
     margin-left: 0;
@@ -1724,7 +1727,8 @@ figure.snip1204 .author span {
         padding: 20px 10px
     }
     h2 {
-        font-size: 2.8rem
+        font-size: 2.8rem;
+		line-height:1.4;
     }
     .navbar-brand {
         float: none;
@@ -1762,7 +1766,16 @@ figure.snip1204 .author span {
         padding: 0;
     }
     .top-area p {
-        text-align: center
+		width:120px;
+		margin-right:0;
+		float:left;
+    }
+	 .top-area .text-right {
+		width:120px;
+		margin-left:0;
+		text-align:right;
+		float:right;
+		margin-bottom:0;
     }
     .badge.custom-badge {
         margin: 0
