@@ -13,16 +13,27 @@ body {
     background-color: #ddd;
     font-size: 1pc;
     line-height: 1.6em;
-background: #15140f; /* Old browsers */
-background: -moz-linear-gradient(45deg, #15140f 0%, #32302b 100%,   #32302b 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, #15140f 0%,#32302b 100%,#32302b 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, #15140f 0%,#32302b 100%,#32302b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15140f', endColorstr='#32302b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: #16222A; /* Old browsers */
+background: -moz-linear-gradient(#16222A 0%, #3A6073 100%,   #3A6073 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(#16222A 0%,#3A6073 100%,#3A6073 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(#16222A 0%,#3A6073 100%,#3A6073 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16222A', endColorstr='#3A6073',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 body,
 html {
     width: auto;
 }
+ul, ol{
+	padding-left:1.4em;
+	}
+ol li{
+	list-style-type: decimal
+	}
+
+em{
+	font-weight:bold;
+	padding:0 1px;
+	}
 figcaption{
 	font-size:0.9em;
 	}
@@ -35,6 +46,17 @@ textarea {
     font-size: inherit;
     line-height: inherit
 }
+.table{
+	border-bottom:1px solid rgb(221, 221, 221);
+	}
+.table>tbody>tr>td{
+	}
+.table>tbody>tr>th{
+	width:140px;
+	}
+.is-jisage{
+	margin-left:-.5em;
+	}
 #wrapper.boxed {
     margin: 0 auto;
     background-color: #fff
@@ -44,6 +66,13 @@ textarea {
         width: auto;
         overflow: hidden;
     }
+.table{
+	border-bottom:none;
+}
+.table>tbody>tr>th{
+	width:inherit;
+}
+
 }
 @media(min-width:768px) {
     #wrapper.boxed {
@@ -177,6 +206,9 @@ p.ultra {
     display: inline-block;
     color: #fff
 }
+.is-text-white{
+	color:#FFF;
+	}
 .is-text-glow{
 	color:#FFF;
 	text-shadow: 0 0 80px rgba(255,255,255,.5);
@@ -595,6 +627,7 @@ hr.bold {
     border-top: 1px solid #eee;
     margin: 30px 0
 }
+
 .marginbot-0 {
     margin-bottom: 0!important
 }
@@ -648,6 +681,9 @@ hr.bold {
 }
 .margintop-50 {
     margin-top: 50px!important
+}
+.marginleft-10 {
+    margin-left: 10px!important
 }
 .paddingtop-0 {
     padding-top: 0!important
@@ -789,7 +825,7 @@ hr.bold {
     background: #404040
 }
 .bg-dark-gradient{
-	background: rgba(42,40,36,0.8);
+	background: rgba(39,58,71,0.8);
 	}
 .text-light {
     color: #fff
@@ -1635,7 +1671,7 @@ figure.snip1204 .author span {
 
 .snip1285 {
   position: relative;
-  color: #bdbdbd;
+  color: #3c6275;
   margin: 20px 0 40px 0;
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -1660,17 +1696,18 @@ figure.snip1204 .author span {
   position: absolute;
   width: 120px;
   height: 120px;
-  border: 3px solid #bdbdbd;
+  border: 3px solid #FEFCD7;
   left: 0;
   top: 50%;
   -webkit-transform: translate(-40px, -68%);
   transform: translate(-40px, -68%);
   border-width: 4px 0 0 4px;
   border-radius: 50%;
+  box-shadow: -20px -20px 80px rgba(255,255,255,.2);
 }
 .snip1285 i {
   font-size: 4.8em;
-  color: #bdbdbd;
+  color: #FEFCD7;
   position: relative;
 }
 
@@ -1714,6 +1751,11 @@ figure.snip1204 .author span {
     }
 }
 @media(max-width:767px) {
+.table-responsive {
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	}
     .div-center {
         width: 100%
     }
@@ -1839,7 +1881,7 @@ figure.snip1204 .author span {
     }
 .snip1285 {
   position: relative;
-  color: #bdbdbd;
+  color: #FEFCD7;
   margin: 20px 0 40px 0;
   font-size: 16px;
   -webkit-box-sizing: border-box;
@@ -1865,7 +1907,7 @@ figure.snip1204 .author span {
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 3px solid #bdbdbd;
+  border: 3px solid #FEFCD7;
   left: 20px;
   top: 50%;
   -webkit-transform: translate(-40px, -68%);
@@ -1875,7 +1917,7 @@ figure.snip1204 .author span {
 }
 .snip1285 i {
   font-size: 4.8em;
-  color: #bdbdbd;
+  color: #FEFCD7;
   position: relative;
 }
 }
