@@ -1182,6 +1182,7 @@ Testimonial
     border-radius: 4px;
     margin: 0 0 40px;
     padding: 15px 18px;
+	width:100%
 }
 .block-text a {
     font-size: 20px;
