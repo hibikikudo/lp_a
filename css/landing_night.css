@@ -1751,6 +1751,10 @@ figure.snip1204 .author span {
     }
 }
 @media(max-width:767px) {
+	.btn-cta{
+		font-size:1.7rem}
+		.panel i span {
+			font-size:80px}
 .table-responsive {
 	border-top:none;
 	border-right:none;
@@ -1922,6 +1926,16 @@ figure.snip1204 .author span {
 }
 }
 @media(max-width:480px) {
+h2{
+	font-size:3rem}
+h3 {
+    font-size: 2.8rem;
+}
+h4 {
+    font-size: 1.8rem;
+}
+h5{
+	font-size:2rem}
     #wrapper {
         overflow: hidden
     }
@@ -1944,14 +1958,15 @@ figure.snip1204 .author span {
         margin: 0 20px 150px 0;
         float: left
     }
-}
 .service-icon2 {
     margin: 0 20px 71px 0;
     float: left
 }
 }
-}
 @media(max-width:320px) {
+	h2 {
+    font-size: 2.6rem;
+}
     .navbar-brand {
         text-align: center;
         display: block;
